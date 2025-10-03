@@ -87,7 +87,8 @@ public class FrequencyPicker extends FrameLayout {
         if (mMHzPicker != null) {
            mMHzPicker.setOnLongPressUpdateInterval(100);
            mMHzPicker.setBackgroundColor(Color.WHITE);
-
+           //setTextColor() added in API level 29
+           mMHzPicker.setTextColor(Color.BLACK);
            mMHzPicker.setOnValueChangedListener(new OnValueChangeListener() {
               public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                   mMhz = newVal;
@@ -103,6 +104,8 @@ public class FrequencyPicker extends FrameLayout {
         if (mKHzPicker != null) {
            mKHzPicker.setOnLongPressUpdateInterval(100);
            mKHzPicker.setBackgroundColor(Color.WHITE);
+           //setTextColor() added in API level 29
+           mKHzPicker.setTextColor(Color.BLACK);
            mKHzPicker.setOnValueChangedListener(new OnValueChangeListener() {
               public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                   mKhz = newVal;
